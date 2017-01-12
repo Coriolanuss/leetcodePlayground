@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestCases>
+  <TestCase x="1" y="4" expected="2"/>
+  <TestCase x="0" y="0" expected="0"/>
+  <TestCase x="4" y="1" expected="2"/>
+  <TestCase x="0" y="2147483647" expected="31"/>
+  <TestCase x="2147483647" y="0" expected="31"/>
+  <TestCase x="256" y="2147483647" expected="30"/>
+  <TestCase x="2147483647" y="256" expected="30"/>
+  <TestCase x="512" y="512" expected="0"/>
+  <TestCase x="256" y="512" expected="2"/>
+  <TestCase x="512" y="512" expected="0"/>
+  <TestCase x="3546" y="94561" expected="12"/>
+</TestCases>

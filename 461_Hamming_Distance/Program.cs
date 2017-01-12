@@ -5,13 +5,12 @@ namespace _461_Hamming_Distance
 {
     class Program
     {
-        // TODO Add unit-tests
         static void Main(string[] args)
         {
             int x = 1, y = 4; // test inputs
 
-            Console.WriteLine(VelosipedSolution.HammingDistance(x, y));
-            // TODO Add GOOD realization
+            Console.WriteLine(VelosipedSolution.HammingDistanceWithXOR(x, y));
+            
             
         }
     }
@@ -19,7 +18,7 @@ namespace _461_Hamming_Distance
     // TODO Add description
     public static class VelosipedSolution
     {
-        public static int HammingDistance(int x, int y)
+        public static int HammingDistanceWithStringManipulations(int x, int y)
         {
             // convert input to binary
             string binaryX = Convert.ToString(x, 2), binaryY = Convert.ToString(y, 2);
@@ -44,6 +43,11 @@ namespace _461_Hamming_Distance
             return counter;
         }
 
+        public static int HammingDistanceWithXOR(int x, int y)
+        {
+            return HammingWeight(x^y);
+        }
+
         private static string AddZerosToString(string binary, int numbOfZeros)
         {
             string zeros = "";
@@ -52,5 +56,24 @@ namespace _461_Hamming_Distance
 
             return zeros + binary;
         }
+
+        private static int HammingWeight(int value)
+        {
+            int sum = 0;
+
+            while (value > 0)
+            {
+                sum += value & 0x01;
+                value >>= 1;
+            }
+
+            return sum;
+        }
     }
+
+    // TODO Add GOOD realization
+    public static class BestSolution
+    {
+
+    } 
 }
