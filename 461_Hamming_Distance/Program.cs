@@ -1,23 +1,29 @@
 ﻿using System;
 
-// TODO Add description
+/// <summary>
+/// Hamming Distance problem
+/// </summary>
 namespace _461_Hamming_Distance
 {
     class Program
     {
         static void Main(string[] args)
-        {
-            int x = 1, y = 4; // test inputs
-
-            Console.WriteLine(VelosipedSolution.HammingDistanceWithXOR(x, y));
-            
-            
-        }
+        { }
     }
 
-    // TODO Add description
-    public static class VelosipedSolution
+    /// <summary>
+    /// Solutions to Hamming Distance problem
+    /// </summary>
+    public static class HammingDistance_Solutions
     {
+        /// <summary>
+        /// My first strugle to solve the task of Hamming Distance.
+        /// Strangly this method is faster then using XOR, which is pure matematical.
+        /// <para>Parameters in any order</para>
+        /// </summary>
+        /// <param name="x">[0; Int.MaxValue]</param>
+        /// <param name="y">[0; Int.MaxValue]</param>
+        /// <returns></returns>
         public static int HammingDistanceWithStringManipulations(int x, int y)
         {
             // convert input to binary
@@ -43,6 +49,13 @@ namespace _461_Hamming_Distance
             return counter;
         }
 
+        /// <summary>
+        /// Purely matematical solution created after consulting with web.
+        /// <para>Parameters in any order</para>
+        /// </summary>
+        /// <param name="x">[0; Int.MaxValue]</param>
+        /// <param name="y">[0; Int.MaxValue]</param>
+        /// <returns></returns>
         public static int HammingDistanceWithXOR(int x, int y)
         {
             return HammingWeight(x^y);
@@ -57,6 +70,11 @@ namespace _461_Hamming_Distance
             return zeros + binary;
         }
 
+        /// <summary>
+        /// Equal to Integer.bitCount in Java
+        /// </summary>
+        /// <param name="value">positive or 0</param>
+        /// <returns></returns>
         private static int HammingWeight(int value)
         {
             int sum = 0;
@@ -70,10 +88,4 @@ namespace _461_Hamming_Distance
             return sum;
         }
     }
-
-    // TODO Add GOOD realization
-    public static class BestSolution
-    {
-
-    } 
 }

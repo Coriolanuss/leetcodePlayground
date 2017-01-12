@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace _461_Hamming_Distance.Tests
 {
     [TestClass()]
-    public class VelosipedSolutionTests
+    public class HammingDistance_SolutionsTests
     {
         public TestContext TestContext { get; set; }
 
@@ -18,7 +18,7 @@ namespace _461_Hamming_Distance.Tests
             "TestCase",
             DataAccessMethod.Sequential)]
         [TestMethod()]
-        public void HammingDistanceTest()
+        public void HammingDistanceTestWithStringManipulations()
         {
             // arrange
             int x = Convert.ToInt32(TestContext.DataRow["x"]);
@@ -26,7 +26,7 @@ namespace _461_Hamming_Distance.Tests
             int expected = Convert.ToInt32(TestContext.DataRow["expected"]);
 
             // act
-            int actual = VelosipedSolution.HammingDistanceWithStringManipulations(x, y);
+            int actual = HammingDistance_Solutions.HammingDistanceWithStringManipulations(x, y);
 
             // assert
             Assert.AreEqual(expected, actual);
@@ -45,7 +45,7 @@ namespace _461_Hamming_Distance.Tests
             int expected = Convert.ToInt32(TestContext.DataRow["expected"]);
 
             // act
-            int actual = VelosipedSolution.HammingDistanceWithXOR(x, y);
+            int actual = HammingDistance_Solutions.HammingDistanceWithXOR(x, y);
 
             // assert
             Assert.AreEqual(expected, actual);
