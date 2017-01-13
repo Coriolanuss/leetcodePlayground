@@ -30,5 +30,20 @@ namespace _412_Fizz_Buzz.Tests
             // Assert
             Assert.AreEqual(expected, actual);
         }
+
+        /// <note>Test is valid only if SelectRespond() works fine (use SelectRespondTest to test)</note>
+        [TestMethod()]
+        public void FizzBuzzWithLinqTest_CustomNumb_ReturnsWord()
+        {
+            // Arrange
+            int numb = 35;
+
+            // Act
+            IList<string> actual = FizzBuzz_Solutions.FizzBuzzWithLinq(numb);
+
+            // Assert
+            for (int i = 0; i < numb; i++)
+                Assert.AreEqual(FizzBuzz_Solutions.SelectRespond(i+1), actual[i]);
+        }
     }
 }

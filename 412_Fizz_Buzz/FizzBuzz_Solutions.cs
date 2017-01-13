@@ -9,7 +9,7 @@ namespace _412_Fizz_Buzz
     /// <summary>
     /// Contains solutions to "Fizz Buzz" problem
     /// </summary>
-    public class FizzBuzz_Solutions
+    public abstract class FizzBuzz_Solutions
     {
         /// <summary>
         /// Iterates through numbers and returns list of words
@@ -49,6 +49,20 @@ namespace _412_Fizz_Buzz
                 return "Buzz";
             else
                 return numb.ToString();
+        }
+
+        /// <summary>
+        /// Creates a list of strings using Linq expression
+        /// </summary>
+        /// <param name="n">Number of words in output list</param>
+        /// <returns>List of words, which correspond to the rules:
+        /// if number % 3 == 0 => "Fizz"
+        /// if number % 5 == 0 => "Buzz"
+        /// if number % 15 == 0 => "FizzBuzz"
+        /// else => number</returns>
+        public static IList<string> FizzBuzzWithLinq(int n)
+        {
+            return Enumerable.Range(1, n).Select(i => i % 15 == 0 ? "FizzBuzz" : i % 3 == 0 ? "Fizz" : i % 5 == 0 ? "Buzz" : i.ToString()).ToList();
         }
     }
 }

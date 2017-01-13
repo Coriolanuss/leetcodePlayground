@@ -14,13 +14,12 @@
   <TestCase number="12" expected="Fizz"/>
   <TestCase number="13" expected="13"/>
   <TestCase number="14" expected="14"/>
-  <TestCase number="15" expected="Buzz"/>
+  <TestCase number="15" expected="FizzBuzz"/>
   <TestCase number="20" expected="Buzz"/>
   <TestCase number="21" expected="Fizz"/>
   <TestCase number="25" expected="Buzz"/>
-  <TestCase number="30" expected="Buzz"/>
-  <TestCase number="45" expected="Buzz"/>
+  <TestCase number="30" expected="FizzBuzz"/>
+  <TestCase number="45" expected="FizzBuzz"/>
   <TestCase number="2147483647" expected="2147483647"/>
-  <TestCase number="2147483648" expected="2147483647"/>
   <TestCase number="2147483646" expected="Fizz"/>
 </TestCases>
