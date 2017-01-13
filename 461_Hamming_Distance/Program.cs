@@ -23,7 +23,7 @@ namespace _461_Hamming_Distance
         /// </summary>
         /// <param name="x">[0; Int.MaxValue]</param>
         /// <param name="y">[0; Int.MaxValue]</param>
-        /// <returns></returns>
+        /// <returns>Hamming distance between two numbers</returns>
         public static int HammingDistanceWithStringManipulations(int x, int y)
         {
             // convert input to binary
@@ -55,7 +55,7 @@ namespace _461_Hamming_Distance
         /// </summary>
         /// <param name="x">[0; Int.MaxValue]</param>
         /// <param name="y">[0; Int.MaxValue]</param>
-        /// <returns></returns>
+        /// <returns>Hamming distance between two numbers</returns>
         public static int HammingDistanceWithXOR(int x, int y)
         {
             return HammingWeight(x^y);
@@ -74,7 +74,7 @@ namespace _461_Hamming_Distance
         /// Equal to Integer.bitCount in Java
         /// </summary>
         /// <param name="value">positive or 0</param>
-        /// <returns></returns>
+        /// <returns>Hamming weight of an integer in binary representation</returns>
         private static int HammingWeight(int value)
         {
             int sum = 0;

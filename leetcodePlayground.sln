@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "461_Hamming_Distance", "461
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "461_Hamming_DistanceTests", "461_Hamming_DistanceTests\461_Hamming_DistanceTests.csproj", "{977C7E3A-7E60-4A7E-98AE-1481FA5EE551}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "412_Fizz_Buzz", "412_Fizz_Buzz\412_Fizz_Buzz.csproj", "{A3F7E8AE-E077-424C-92F8-0E55F9A818DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "412_Fizz_BuzzTests", "412_Fizz_BuzzTests\412_Fizz_BuzzTests.csproj", "{0B5B0538-2574-46FE-8C40-5422EE6978C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{977C7E3A-7E60-4A7E-98AE-1481FA5EE551}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{977C7E3A-7E60-4A7E-98AE-1481FA5EE551}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{977C7E3A-7E60-4A7E-98AE-1481FA5EE551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F7E8AE-E077-424C-92F8-0E55F9A818DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F7E8AE-E077-424C-92F8-0E55F9A818DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F7E8AE-E077-424C-92F8-0E55F9A818DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F7E8AE-E077-424C-92F8-0E55F9A818DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B5B0538-2574-46FE-8C40-5422EE6978C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B5B0538-2574-46FE-8C40-5422EE6978C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B5B0538-2574-46FE-8C40-5422EE6978C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B5B0538-2574-46FE-8C40-5422EE6978C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
