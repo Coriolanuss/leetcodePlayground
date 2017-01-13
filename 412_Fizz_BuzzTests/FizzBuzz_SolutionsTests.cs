@@ -21,12 +21,14 @@ namespace _412_Fizz_Buzz.Tests
         public void SelectRespondTest()
         {
             // Arrange
-            
+            int numb = Convert.ToInt32(TestContext.DataRow["number"]);
+            string expected = Convert.ToString(TestContext.DataRow["expected"]);
+
             // Act
-            FizzBuzz_Solutions.
+            string actual = FizzBuzz_Solutions.SelectRespond(numb);
 
             // Assert
-            Assert.Fail();
+            Assert.AreEqual(expected, actual);
         }
     }
 }

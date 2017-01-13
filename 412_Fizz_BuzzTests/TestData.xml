@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestCases>
+  <TestCase number="1" expected="1"/>
+  <TestCase number="2" expected="2"/>
+  <TestCase number="3" expected="Fizz"/>
+  <TestCase number="4" expected="4"/>
+  <TestCase number="5" expected="Buzz"/>
+  <TestCase number="6" expected="Fizz"/>
+  <TestCase number="7" expected="7"/>
+  <TestCase number="8" expected="8"/>
+  <TestCase number="9" expected="Fizz"/>
+  <TestCase number="10" expected="Buzz"/>
+  <TestCase number="11" expected="11"/>
+  <TestCase number="12" expected="Fizz"/>
+  <TestCase number="13" expected="13"/>
+  <TestCase number="14" expected="14"/>
+  <TestCase number="15" expected="Buzz"/>
+  <TestCase number="20" expected="Buzz"/>
+  <TestCase number="21" expected="Fizz"/>
+  <TestCase number="25" expected="Buzz"/>
+  <TestCase number="30" expected="Buzz"/>
+  <TestCase number="45" expected="Buzz"/>
+  <TestCase number="2147483647" expected="2147483647"/>
+  <TestCase number="2147483648" expected="2147483647"/>
+  <TestCase number="2147483646" expected="Fizz"/>
+</TestCases>
