@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace _485_Max_Consecutive_Ones
 {
     /// <summary>
-    /// Contains Solutions to the Max Consecutive Ones problem
+    /// Contains solutions to the Max Consecutive Ones problem
     /// </summary>
     public class MaxConsecutiveOnes_Solutions
     {

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestCases>
+  <TestCase text="Hello" expected="olleH"/>
+  <TestCase text="Hello world!" expected="!dlrow olleH"/>
+  <TestCase text="" expected=""/>
+  <TestCase text="0" expected="0"/>
+  <TestCase text="123" expected="321"/>
+  <TestCase text="–°Ÿ" expected="Ÿ°–"/>
+</TestCases>
