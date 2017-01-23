@@ -45,6 +45,7 @@ namespace _344_Reverse_String
 
         /// <summary>
         /// Reverses string using reversing of chars array.
+        /// Looks like this is the optimal option between other two.
         /// </summary>
         /// <param name="s">String of any length</param>
         /// <returns>Reversed string</returns>
