@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "463_Island_Perimeter", "463
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "463_Island_PerimeterTests", "463_Island_PerimeterTests\463_Island_PerimeterTests.csproj", "{40C2040B-DE25-45CE-AB4B-2A7B863AB01E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "292_Nim_Game", "292_Nim_Game\292_Nim_Game.csproj", "{9BB5B134-9BE2-43FA-9B5C-65CAA968FA79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{40C2040B-DE25-45CE-AB4B-2A7B863AB01E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40C2040B-DE25-45CE-AB4B-2A7B863AB01E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40C2040B-DE25-45CE-AB4B-2A7B863AB01E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BB5B134-9BE2-43FA-9B5C-65CAA968FA79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BB5B134-9BE2-43FA-9B5C-65CAA968FA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BB5B134-9BE2-43FA-9B5C-65CAA968FA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BB5B134-9BE2-43FA-9B5C-65CAA968FA79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
